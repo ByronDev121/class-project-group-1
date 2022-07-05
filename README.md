@@ -1,1 +1,1 @@
-# blog-app-group-1
+# class-project-group-1

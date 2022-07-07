@@ -1,7 +1,6 @@
 # class-project-group-1
 Ava Beninati 
 <!DOCTYPE html>
-
 <html>
     <head>
         <meta charset="utf-8">

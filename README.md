@@ -1,1 +1,4 @@
-# class-project-group-1 - Shamik
+# class-project-group-1
+
+Ava Beninati
+Shamik Dandekar

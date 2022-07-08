@@ -1,1 +1,8 @@
-/*css*/
+.text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.textBlocks {
+    border: solid black;
+    padding: 8px;
+}

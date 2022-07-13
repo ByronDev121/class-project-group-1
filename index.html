@@ -4,85 +4,34 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CSS Cheat Sheet</title>
+    <title>Home Page</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="index.css">
     <!-- CSS only -->
-    <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-    crossorigin="anonymous"
-    style type="text/css">
-        
-    </style> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class = "welcome">
-      <h1>Welcome to Food Frenzy: A blog site where <strong>you</strong> can learn new recipes and even sumbit your own</h1>
-      <a href="../blog-create/create.html"> SUBMIT BLOG </a>
+    <div class="welcome">
+        <img src="home-image.jpg">
+        <div class="welcome-text">
+            <h1>Welcome to Food Frenzy: A blog site where <strong>you</strong> can learn new recipes and even submit
+                your
+                own</h1>
+            <a class="btn btn-secondary" href="./pages/blog-create/create.html"> SUBMIT BLOG </a>
+        </div>
     </div>
 
-<br>
-<br>
+    <br>
+    <br>
 
-        <!--Flex box-->
+    <!--Flex box-->
+    <div class="flex-box" id="blog-list">
+    </div>
 
-        <div class="flex-box" id = "blog-list">
-
-            <!-- <div class="flex-item card">
-
-                <div class="card-header">
-                    <h3>Blog 1</h3>
-                </div>
-
-                <div class="card-content">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book.
-                    <a href="../blog-read/read.html">Read It</a>
-                </div>
-
-            </div> -->
-<!-- 
-            <div class="flex-item card">
-
-                <div class="card-header">
-                    <h3>Blog 2</h3>
-                </div>
-
-                <div class="card-content">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book.
-                    <a href="../blog-read/read.html">Read It</a>
-                </div>
-
-            </div>
-            <div class="flex-item card">
-
-                <div class="card-header">
-                    <h3>Blog 3</h3>
-                </div>
-
-                <div class="card-content">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book.
-                    <a href="../blog-read/read.html">Read It</a>
-                </div> -->
-
-        </div>
-
-
-
-        
-
-    <div style="margin-top: 400px;"></div>
-
-    <script src="home.js" async defer></script>
+    <script src="index.js" async defer></script>
 </body>
 
 </html>

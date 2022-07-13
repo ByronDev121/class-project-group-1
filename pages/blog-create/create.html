@@ -1,100 +1,118 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Group 1 Project</title>
-        <meta name="description" content="" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="./create.css" />
-        <!-- CSS only -->
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-          crossorigin="anonymous"
-        />
-      </head>
-    <body>
 
-      <div class="container">
-        <H1 class="header" style="text-align:center;"> Write Your Blog!</H1>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Create Page</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./create.css" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+</head>
+
+<body>
+
+  <div class="container mb-5">
+    <img src="../../home-image.jpg">
+    <div class="header-text">
+      <H1 class="header" style="text-align:center;"> Write Your Blog!</H1>
+    </div>
+  </div>
+
+
+  <form>
+    <div class="textBox">
+      <div>
+        <labels>
+          <h4>Blog Title</h4>
+        </labels>
+
+        <br>
+        <input type="text" name="blogTitle" id="blogTitle">
       </div>
-      <form>
-        <div class="textBox">
-        <div>
-            <labels> Blog Title </labels>
-        
-            <br>
-            <input type="text" name="blogTitle" id="blogTitle">
-        </div>
+      <br>
+      <div>
+        <labels>
+          <h4>Description</h4>
+        </labels>
         <br>
-        <div>
-            <labels> Description</labels>
-            <br>
-            <small>Tell us about your blog!</small>
-            <br>
-            <input type="text" name="description" id="description">
-        </div>
-      
+        <small>Tell us about your blog!</small>
         <br>
-        <hr>
-        <div>
-            <labels>Intro Header</labels>
-            <br>
-            <textarea></textarea>
-        </div>
-        <div>
-          <labels>Intro Content </labels>
+        <input type="text" name="description" id="description">
+      </div>
+
+      <br>
+      <hr>
+      <div>
+        <labels>
+          <h5>Intro Header</h5>
+        </labels>
         <br>
-          <textarea></textarea>
-        </div>
-        <br>
-        <hr>
-        <div>
-          <labels> Main Header</labels>
-          <br>
-          <textarea></textarea>
+        <input type="text" name="introHeader" id="introHeader">
       </div>
       <div>
-        <labels>Main Content </labels>
-      <br>
+        <labels>
+          <h5>Intro Content</h5>
+        </labels>
+        <br>
         <textarea></textarea>
       </div>
       <br>
       <hr>
       <div>
-        <labels>Conclusion Header</labels>
+        <labels>
+          <h5>Main Header</h5>
+        </labels>
+        <br>
+        <input type="text" name="mainHeader" id="mainHeader">
+      </div>
+      <div>
+        <labels>
+          <h5>Main Content</h5>
+        </labels>
         <br>
         <textarea></textarea>
-    </div>
-    <div>
-      <labels>Concluison Content </labels>
-    <br>
-      <textarea></textarea>
-    </div>
-    <div>
-      <small> You did it!!!!</small>
-    </div>
-    
-        <label>Will you sumbit another blog?</label>
-        <select>
-          <option>Yes definetly!</option>
-          <option>Nope this was awful</option>
-        </select>
       </div>
-    </form>
+      <br>
+      <hr>
+      <div>
+        <labels>
+          <h5>Conclusion Header</h5>
+        </labels>
+        <br>
+        <input type="text" name="conclusionHeader" id="conclusionHeader">
+      </div>
+      <div>
+        <labels>
+          <h5>Conclusion Content</h5>
+        </labels>
+        <br>
+        <textarea></textarea>
+      </div>
+
+      <div class="mt-5">
+        <small> You did it!!!!</small>
+      </div>
+
+      <label>Will you sumbit another blog?</label>
+      <select>
+        <option>Yes definitely!</option>
+        <option>Nope this was awful</option>
+      </select>
+    </div>
+  </form>
+
+  <!-- Button -->
+  <div class="button mt-5">
+    <input type="submit" class="button">
 
 
-    
-    
-    <!-- Button -->
-    <div class = "button">
-    <input type = "submit" class = "button">
-    
-        
-        
-        <script src="./create.js" async defer></script>
-    </body>
+
+    <script src="./create.js" async defer></script>
+</body>
+
 </html>

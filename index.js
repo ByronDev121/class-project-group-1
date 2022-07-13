@@ -1,34 +1,14 @@
-//java script
-
-
-const HTMLElement = `
+let card =  `
 <div class="flex-item card">
+  <div class="card-header">
+      <h3>title</h3>
+  </div>
+  <div class="card-content">
+      description
+      <a href="./pages/blog-read/read.html?blogID=BLOGID">Read It</a>
+  </div>
+</div>`;
 
-<div class="card-header">
-    <h3>Blog 1</h3>
-</div>
-
-<div class="card-content">
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-    and scrambled it to make a type specimen book.
-    <a href="../blog-read/read.html">Read It</a>
-</div>
-
-</div>
-`;
-let card =  `<div class="flex-item card">
-
-<div class="card-header">
-    <h3>title</h3>
-</div>
-
-<div class="card-content">
-    description
-    <a href="../blog-read/read.html?blogID=BLOGID">Read It</a>
-</div>
-
-</div> `
 const blogPosts = [
     {
       id: 1,  

@@ -1,2 +1,4 @@
 # class-project-group-1
-Byron de Villiers
+Charlotte Kraus
+Ava Beninati
+Shamik Dandekar

@@ -3,7 +3,8 @@ import * as firebase from "../../services/firebase.js";
 
 
 
-let bagPost = {
+
+let blogPost = {
   id: 1,
   title: "title",
   author: "author",
@@ -14,6 +15,19 @@ let bagPost = {
   header: "header",
   content: "text",
 }; 
+
+const form = document.getElementById("theform");
+form.addEventListener("submit", async (event) => {
+  
+    
+  
+    event.preventDefault();
+    formSubmit();
+    
+  
+
+  
+});
 
 
 async function createPosts() {
@@ -33,6 +47,8 @@ async function createPosts() {
  
   //once this function works on html onSubmit we will be good to go!!
   function formSubmit() {
+    console.log("start");
+
   let form = document.getElementById("theform");
   const title = document.getElementById("title");
   const author = document.getElementById("author");
@@ -54,9 +70,17 @@ async function createPosts() {
 
   
 
-  createPosts();
   
+
+  createPosts();
+
+  console.log("done");
+  
+ 
 }
+
+
+//window.formSubmit = formSubmit;
 
 
 

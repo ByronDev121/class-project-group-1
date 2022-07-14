@@ -1,4 +1,10 @@
-let card =  `
+import * as firebase from "./services/firebase.js";
+
+const urlSearchParams = new URLSearchParams(window.location.search);
+const params = Object.fromEntries(urlSearchParams.entries());
+console.log(params);
+
+let card = `
 <div class="flex-item card">
   <div class="card-header">
       <h3>title</h3>
@@ -9,7 +15,7 @@ let card =  `
   </div>
 </div>`;
 
-const blogPosts = [
+/*const blogPosts = [
     {
       id: 1,  
       title: "Blog Post 1",
@@ -61,26 +67,53 @@ const blogPosts = [
     
     
     
-  ];
+  ]; */
 
-
-const blogList = document.getElementById('blog-list');
+const blogList = document.getElementById("blog-list");
 
 console.log(blogList);
 
-let html = '';
+let html = "";
 
-for(let i = 0; i<blogPosts.length; i++)
+/*for(let i = 0; i<blogPosts.length; i++)
 {
 let cardcopy = Object.assign(card);   
 cardcopy = cardcopy.replace('title' , blogPosts[i].title);
 cardcopy = cardcopy.replace('description' , blogPosts[i].description);
 cardcopy = cardcopy.replace('BLOGID' , blogPosts[i].id);   
 html += cardcopy;
-};
+};*/
 
-blogList.innerHTML= html;
+//blogList.innerHTML= html;
 
+async function fetchBlogIds() {
+  const querySnapshot = await firebase.firestore.getDocs(
+    firebase.firestore.collection(firebase.db, "blogPost")
+  );
 
+  querySnapshot.forEach((doc) => {
+    console.log(doc.id);
+  });
+}
+
+async function blogCards() {
+  const querySnapshot = await firebase.firestore.getDocs(
+    firebase.firestore.collection(firebase.db, "blogPost")
+  );
+
+  querySnapshot.forEach((doc) => {
+    const blogPost = doc.data();
+    let cardcopy = Object.assign(card);
+    cardcopy = cardcopy.replace("title", blogPost.title);
+    cardcopy = cardcopy.replace("description", blogPost.description);
+    cardcopy = cardcopy.replace("BLOGID", blogPost.id);
+    html += cardcopy;
+  });
+  blogList.innerHTML= html;
+}
+
+fetchBlogIds();
+
+blogCards();
 
 

@@ -43,6 +43,17 @@ async function createPosts() {
   
   }
 
+  let i = 0;
+  async function getid() {
+    const querySnapshot = await firebase.firestore.getDocs(
+      firebase.firestore.collection(firebase.db, "blogPost")
+    );
+  
+    querySnapshot.forEach((doc) => {
+      i++
+    });
+  } 
+
 
  
   //once this function works on html onSubmit we will be good to go!!
@@ -61,6 +72,9 @@ async function createPosts() {
   blogPost.description = description.value;
   blogPost.header = header.value;
   blogPost.content = content.value;
+  getid();
+  blogPost.id = i;
+  i = 0;
 
   title.value = "";
   author.value = "";

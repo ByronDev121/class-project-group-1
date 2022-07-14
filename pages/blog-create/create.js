@@ -31,7 +31,7 @@ async function createPosts() {
 
 
  
-
+  //once this function works on html onSubmit we will be good to go!!
   function formSubmit() {
   let form = document.getElementById("theform");
   const title = document.getElementById("title");

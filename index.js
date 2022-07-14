@@ -1,8 +1,8 @@
 import * as firebase from "./services/firebase.js";
+//import * as create from "./pages/blog-create/create.js";
 
-const urlSearchParams = new URLSearchParams(window.location.search);
-const params = Object.fromEntries(urlSearchParams.entries());
-console.log(params);
+
+
 
 let card = `
 <div class="flex-item card">
@@ -71,7 +71,7 @@ let card = `
 
 const blogList = document.getElementById("blog-list");
 
-console.log(blogList);
+//console.log(blogList);
 
 let html = "";
 
@@ -112,7 +112,7 @@ async function blogCards() {
   blogList.innerHTML= html;
 }
 
-fetchBlogIds();
+//fetchBlogIds();
 
 blogCards();
 

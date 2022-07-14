@@ -24,23 +24,36 @@
   </div>
 
 
-  <form>
+  <form id = "theform" class="form mb-3" onsubmit = "formSubmit(); return false; 
+  /* formSubmit function not working here!!, 
+     for some reason cannot connect to create.js, 
+     can't connect to create.js because type = module, 
+     but for firebase to work type must = module     NEED HELP! */
+  ">
     <div class="textBox">
       <div>
         <labels>
           <h4>Blog Title</h4>
         </labels>
 
-        <br>
-        <input type="text" name="blogTitle" id="blogTitle">
+        
+        <input type="text" name="title" id="title">
+      </div>
+      <br>
+      <div>
+        <labels>
+          <h4>Author</h4>
+        </labels>
+
+        
+        <input type="text" name="author" id="author">
       </div>
       <br>
       <div>
         <labels>
           <h4>Description</h4>
         </labels>
-        <br>
-        <small>Tell us about your blog!</small>
+        <small>Give us a short description about your blog!</small>
         <br>
         <input type="text" name="description" id="description">
       </div>
@@ -51,68 +64,34 @@
         <labels>
           <h5>Intro Header</h5>
         </labels>
-        <br>
-        <input type="text" name="introHeader" id="introHeader">
+        
+        <input type="text" name="header" id="header">
       </div>
+      <br>
       <div>
         <labels>
           <h5>Intro Content</h5>
         </labels>
-        <br>
-        <textarea></textarea>
+        
+        
+        <input type="text" name="content" id="content">
       </div>
       <br>
       <hr>
-      <div>
-        <labels>
-          <h5>Main Header</h5>
-        </labels>
-        <br>
-        <input type="text" name="mainHeader" id="mainHeader">
-      </div>
-      <div>
-        <labels>
-          <h5>Main Content</h5>
-        </labels>
-        <br>
-        <textarea></textarea>
-      </div>
-      <br>
-      <hr>
-      <div>
-        <labels>
-          <h5>Conclusion Header</h5>
-        </labels>
-        <br>
-        <input type="text" name="conclusionHeader" id="conclusionHeader">
-      </div>
-      <div>
-        <labels>
-          <h5>Conclusion Content</h5>
-        </labels>
-        <br>
-        <textarea></textarea>
-      </div>
-
-      <div class="mt-5">
-        <small> You did it!!!!</small>
-      </div>
-
-      <label>Will you sumbit another blog?</label>
-      <select>
-        <option>Yes definitely!</option>
-        <option>Nope this was awful</option>
-      </select>
-    </div>
-  </form>
+      
 
   <!-- Button -->
   <div class="button mt-5">
-    <input type="submit" class="button">
+    <input type="submit" class="btn btn-dark" value="submit">
+  </form>
+
+  <div class="go home">
+    
+    <a href="../../index.html">go back to main page</a>
+</div>
 
 
-
-    <script src="./create.js" async defer></script>
+  <script type = "module" src="./create.js" async defer></script>
 </body>
 
 </html>

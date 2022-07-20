@@ -16,9 +16,78 @@
           crossorigin="anonymous"
         />
       </head>
-    <body>
-        
-        
-        <script type = module src="./edit.js" async defer></script>
-    </body>
+      <body>
+
+        <div class="container mb-5">
+          <img src="../../home-image.jpg">
+          <div class="header-text">
+            <H1 class="header" style="text-align:center;"> Edit your Blog!</H1>
+          </div>
+        </div>
+      
+      
+        <form id = "theform" class="form mb-3">
+          <div class="textBox">
+            <div>
+              <labels>
+                <h4>Blog Title</h4>
+              </labels>
+      
+              
+              <input type="text" name="title" id="title">
+            </div>
+            <br>
+            <div>
+              <labels>
+                <h4>Author</h4>
+              </labels>
+      
+              
+              <input type="text" name="author" id="author">
+            </div>
+            <br>
+            <div>
+              <labels>
+                <h4>Description</h4>
+              </labels>
+              <small>Give us a short description about your blog!</small>
+              <br>
+              <input type="text" name="description" id="description">
+            </div>
+      
+            <br>
+            <hr>
+            <div>
+              <labels>
+                <h5>Intro Header</h5>
+              </labels>
+              
+              <input type="text" name="header" id="header">
+            </div>
+            <br>
+            <div>
+              <labels>
+                <h5>Intro Content</h5>
+              </labels>
+              
+              
+              <input type="text" name="content" id="content">
+            </div>
+            <br>
+            <hr>
+            
+      
+        <!-- Button -->
+        <div class="button mt-5">
+          <input id = "myPop" type="submit" class="btn btn-dark" value="submit">
+        </form>
+      
+        <div class="go home">
+          
+          <a href="../../index.html">go back to main page</a>
+      </div>
+      
+      
+        <script type = "module" src="./edit.js" async defer></script>
+      </body>
 </html>

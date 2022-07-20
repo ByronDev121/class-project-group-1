@@ -12,6 +12,8 @@ let card = `
   <div class="card-content">
       description
       <a href="./pages/blog-read/read.html?blogID=BLOGID">Read It</a>
+      <br>
+      <a href="./pages/blog-edit/edit.html?blogID=BLOGID">Edit It</a>
   </div>
 </div>`;
 
@@ -106,6 +108,7 @@ async function blogCards() {
     let cardcopy = Object.assign(card);
     cardcopy = cardcopy.replace("title", blogPost.title);
     cardcopy = cardcopy.replace("description", blogPost.description);
+    cardcopy = cardcopy.replace("BLOGID", blogPost.id);
     cardcopy = cardcopy.replace("BLOGID", blogPost.id);
     html += cardcopy;
   });
